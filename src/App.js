@@ -5,6 +5,8 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Mashehu from './components/Mashehu';
+import Countergpt from './components/Countergpt';
+import Counter from './components/Counter';
 
 // function App() {
 //   return (
@@ -19,7 +21,11 @@ class App extends Component {
     return (
       <div className="App">
 
+        <Counter />
+
         <Message />
+
+        <Countergpt />
 
 
 

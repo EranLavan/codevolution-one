@@ -9,7 +9,11 @@ const Hello = () => {
 
     return React.createElement(
         'div', 
-        {id: 'hello', className: 'dummyClass'}, 
+        {
+            id: 'hello', 
+            className: 'dummyClass'
+        }, 
+
         React.createElement('h3', null, 'Hello, Menkalinan'))
 }
 
