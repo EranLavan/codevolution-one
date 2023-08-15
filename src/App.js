@@ -23,9 +23,9 @@ class App extends Component {
 
         <Counter />
 
-        <Message />
+        {/* <Message />
 
-        <Countergpt />
+        <Countergpt /> */}
 
 
 
