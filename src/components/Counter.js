@@ -12,7 +12,7 @@ class Counter extends Component {
   
   increment() {
     this.setState(
-      (prevState) => ({
+      (prevState, props) => ({
       count: prevState.count + 1
     }),
     () => {

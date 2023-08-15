@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Counter />
+        {/* <Counter /> */}
 
         {/* <Message />
 
@@ -31,17 +31,17 @@ class App extends Component {
 
         {/* <Greet name="Bruce" heroName="Batman">
           <p>This is children props</p>
-        </Greet>
+        </Greet> */}
         
-        <Greet name="Clark" heroName="Superman">
+        {/* <Greet name="Clark" heroName="Superman">
           <button>Action</button>
-        </Greet>
+        </Greet> */}
         
         <Greet name="Diana" heroName="Wonder Woman"/>
 
         <Welcome name="Bruce" heroName="Batman" />
-        <Welcome name="Clark" heroName="Superman" />
-        <Welcome name="Diana" heroName="Wonder Woman" /> */}
+        {/* <Welcome name="Clark" heroName="Superman" /> */}
+        {/* <Welcome name="Diana" heroName="Wonder Woman" /> */}
       
       </div>
     )
