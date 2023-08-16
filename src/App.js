@@ -7,6 +7,8 @@ import Message from './components/Message';
 import Mashehu from './components/Mashehu';
 import Countergpt from './components/Countergpt';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 // function App() {
 //   return (
@@ -20,6 +22,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <FunctionClick />
+
+        <ClassClick />
 
         {/* <Counter /> */}
 
@@ -37,9 +42,9 @@ class App extends Component {
           <button>Action</button>
         </Greet> */}
         
-        <Greet name="Diana" heroName="Wonder Woman"/>
+        {/* <Greet name="Diana" heroName="Wonder Woman"/> */}
 
-        <Welcome name="Bruce" heroName="Batman" />
+        {/* <Welcome name="Bruce" heroName="Batman" /> */}
         {/* <Welcome name="Clark" heroName="Superman" /> */}
         {/* <Welcome name="Diana" heroName="Wonder Woman" /> */}
       
