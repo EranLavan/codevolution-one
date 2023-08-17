@@ -8,7 +8,8 @@ import Mashehu from './components/Mashehu';
 import Countergpt from './components/Countergpt';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
+// import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 // function App() {
 //   return (
@@ -22,9 +23,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FunctionClick />
+        {/* <FunctionClick /> */}
 
-        <ClassClick />
+        <EventBind />
+
+        {/* <ClassClick /> */}
 
         {/* <Counter /> */}
 
