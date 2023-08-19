@@ -6,36 +6,61 @@ class UserGreeting extends Component {
       super(props)
     
       this.state = {
-         isLoggedIn: false
+         isLoggedIn: true
       }
     }
+   
+// //  FIRST METHOD: inside the render   
 
+//   render() {
+ 
+//     if (this.state.isLoggedIn) {
+//         return (
+//             <div>
+//                 Welcome, Menkalinan
+//             </div>
+//         )
+//     } else {
+//         return (
+//             <div>
+//                 Welcome, Guest
+//             </div>
+//         )
+//     }
+//     } 
+//   
 
-    // login = () => {
-    //     this.setState({
-    //         isLoggedIn: true
-    //     })
-    // }
-    
-    
+// // SECOND METHOD: variables
 
-  render() {
- //   <button onClick={login()}>Login if you want</button>
+//     render() {
 
-    if (this.state.isLoggedIn) {
-        return (
-            <div>
-                Welcome, Menkalinan
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                Welcome, Guest
-            </div>
+//         let message 
+//         if (this.state.isLoggedIn) {
+//             message = <div>Welcome, Menkalinan</div>
+//         } else {
+//             message = <div>Welcome, Guest</div>
+//         }
+
+// return (<div>{message}</div>)
+
+//     }
+
+// // THIRD METHOD: ternary operator
+
+    render() {
+        return(
+            this.state.isLoggedIn 
+            ? <div>Welcome, Menkalinan</div> 
+            : <div>Welcome, Guest</div>
         )
     }
-    } 
-  }
+
+// // FOURTH METHOD: short circuit operator approach (specific case of ternary)
+
+    // render() {
+    //     return this.state.isLoggedIn && <div>Welcome, Menkalinan</div>
+    // }
+
+}
 
 export default UserGreeting
