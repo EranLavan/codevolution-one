@@ -22,9 +22,12 @@ function PersonsList() {
             skill: 'Vue'
         },
     ];
-    const list = persons.map(person => <Person person={person} />)
+    const personList = persons.map(x => <Person key={x.name} person={x} />)
+    //key prop SHOULD BE UNIQUE, but it isn't important whether 
+    //it's ID or NAME or whatever as long as it's unique
+
   return (
-    <div>{list}</div>
+    <div>{personList}</div>
   )
 }
 
