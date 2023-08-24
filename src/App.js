@@ -14,6 +14,10 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import PersonsList from './components/PersonsList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
 
 // function App() {
 //   return (
@@ -28,7 +32,16 @@ class App extends Component {
     return (
       <div className="App">
 
-        <PersonsList />
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
+        <Inline />
+        <Stylesheet primary={true}/>
+
+        {/* <Stylesheet primary={true}/> */}
+
+        {/* <Inline /> */}
+
+        {/* <PersonsList /> */}
 
         {/* <NameList /> */}
 
