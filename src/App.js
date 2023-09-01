@@ -23,6 +23,7 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 // function App() {
 //   return (
@@ -37,7 +38,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <ParentComp />
+        <RefsDemo />
+
+        {/* <ParentComp /> */}
 
         {/* <Table /> */}
 
