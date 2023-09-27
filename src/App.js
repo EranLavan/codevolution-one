@@ -35,6 +35,7 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import Counter37 from './components/Counter37';
+import ComponentC from './components/ComponentC'
 
 // function App() {
 //   return (
@@ -49,21 +50,33 @@ class App extends Component {
     return (
       <div className="App">
 
-        <User render={(isLoggedIn) => isLoggedIn ? 'Menkalinan' : 'Guest'}/>
+        <ComponentC />
 
-        <Counter37 render={
-          (count, incrementCount) => 
-          <ClickCounterTwo 
-          count={count} 
-          incrementCount={incrementCount}
-          ></ClickCounterTwo>} />
+        {/* Context, 39, 1:10 */}
 
-          <Counter37 render={
-          (count, incrementCount) => 
-          <HoverCounterTwo 
-          count={count} 
-          incrementCount={incrementCount}
-          ></HoverCounterTwo>} />
+        {/* <User render={(isLoggedIn) => isLoggedIn ? 'Menkalinan' : 'Guest'}/>
+
+        <Counter37>
+          {
+            (count, incrementCount) => (
+              <ClickCounterTwo
+              count={count}
+              incrementCount={incrementCount}>
+              </ClickCounterTwo>
+            )
+          }
+        </Counter37>
+
+        <Counter37>
+          {
+            (count, incrementCount) => (
+              <HoverCounterTwo
+              count={count}
+              incrementCount={incrementCount}>
+              </HoverCounterTwo>
+            )
+          }
+        </Counter37> */}
 
         {/* <ClickCounter name='Menkalinan'/>
 
