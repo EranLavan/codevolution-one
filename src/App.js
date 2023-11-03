@@ -35,7 +35,8 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import Counter37 from './components/Counter37';
-import ComponentC from './components/ComponentC'
+import ComponentC from './components/ComponentC';
+import PostList from './components/PostList';
 
 // function App() {
 //   return (
@@ -50,9 +51,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <ComponentC />
+        <PostList />
 
-        {/* Context, 39, 1:10 */}
+        {/* <ComponentC /> */}
 
         {/* <User render={(isLoggedIn) => isLoggedIn ? 'Menkalinan' : 'Guest'}/>
 
