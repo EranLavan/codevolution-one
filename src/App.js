@@ -37,6 +37,7 @@ import User from './components/User';
 import Counter37 from './components/Counter37';
 import ComponentC from './components/ComponentC';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 // function App() {
 //   return (
@@ -51,7 +52,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <PostList />
+        <PostForm />
+
+        {/* <PostList /> */}
 
         {/* <ComponentC /> */}
 
