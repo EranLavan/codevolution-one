@@ -38,6 +38,8 @@ import Counter37 from './components/Counter37';
 import ComponentC from './components/ComponentC';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
 
 // function App() {
 //   return (
@@ -52,7 +54,11 @@ class App extends Component {
     return (
       <div className="App">
 
-        <PostForm />
+        {/* <ClassCounter /> */}
+
+        <HookCounter />
+
+        {/* <PostForm /> */}
 
         {/* <PostList /> */}
 
