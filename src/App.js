@@ -41,6 +41,7 @@ import PostForm from './components/PostForm';
 import ClassCounter from './components/ClassCounter';
 import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
+import HookCounterThree from './components/HookCounterThree'
 
 // function App() {
 //   return (
@@ -59,7 +60,9 @@ class App extends Component {
 
         {/* <HookCounter /> */}
 
-        <HookCounterTwo />
+        {/* <HookCounterTwo /> */}
+
+        <HookCounterThree />
 
         {/* <PostForm /> */}
 
