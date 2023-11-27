@@ -45,6 +45,8 @@ import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import HookClassCounterOne from './components/HookClassCounterOne';
 import HookFunctionCounterOne from './components/HookFunctionCounterOne';
+import HookClassMouse from './components/HookClassMouse';
+import HookFunctionMouse from './components/HookFunctionMouse';
 
 // function App() {
 //   return (
@@ -69,9 +71,13 @@ class App extends Component {
 
         {/* <HookCounterFour /> */}
 
-        <HookClassCounterOne />
+        {/* <HookClassCounterOne />
 
-        <HookFunctionCounterOne />
+        <HookFunctionCounterOne /> */}
+
+        {/* <HookClassMouse /> */}
+
+        <HookFunctionMouse />
 
         {/* <PostForm /> */}
 
