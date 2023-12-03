@@ -48,6 +48,8 @@ import HookFunctionCounterOne from './components/HookFunctionCounterOne';
 import HookClassMouse from './components/HookClassMouse';
 import HookFunctionMouse from './components/HookFunctionMouse';
 import HookMouseContainer from './components/HookMouseContainer';
+import HookIntervalClassCounter from './components/HookIntervalClassCounter';
+import HookIntervalFunctionCounter from './components/HookIntervalFunctionCounter';
 
 // function App() {
 //   return (
@@ -80,11 +82,11 @@ class App extends Component {
 
         {/* <HookFunctionMouse /> */}
 
-        <HookMouseContainer />
+        {/* <HookMouseContainer /> */}
 
-        {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        NOW in the middle of hooks 10, not complete */}
+        <HookIntervalClassCounter />
+
+        <HookIntervalFunctionCounter />
 
         {/* <PostForm /> */}
 
