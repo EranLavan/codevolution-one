@@ -60,6 +60,9 @@ import DataFetching from './components/DataFetching';
 //   );
 // }
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
 class App extends Component {
   render() {
     return (
@@ -89,7 +92,7 @@ class App extends Component {
 
         <HookIntervalFunctionCounter /> */}
 
-        <DataFetching />
+        {/* <DataFetching /> */}
 
         {/* //////////////////////////////////// */}
 
@@ -97,7 +100,13 @@ class App extends Component {
 
         {/* <PostList /> */}
 
-        {/* <ComponentC /> */}
+        <UserContext.Provider value={'Menkalinan'}>
+
+        <ChannelContext.Provider value={'Codevolution'}>
+        <ComponentC />
+        </ChannelContext.Provider>
+
+        </UserContext.Provider>
 
         {/* <User render={(isLoggedIn) => isLoggedIn ? 'Menkalinan' : 'Guest'}/>
 
