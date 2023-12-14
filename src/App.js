@@ -51,7 +51,8 @@ import './appStyles.css';
 // import HookIntervalClassCounter from './components/HookIntervalClassCounter';
 // import HookIntervalFunctionCounter from './components/HookIntervalFunctionCounter';
 // import DataFetching from './components/DataFetching';
-import FunctionC from './components/FunctionC';
+// import FunctionC from './components/FunctionC';
+import CounterOne from './components/CounterOne';
 
 // function App() {
 //   return (
@@ -68,6 +69,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <CounterOne />
 
         {/* <ClassCounter /> */}
 
@@ -101,13 +104,13 @@ class App extends Component {
 
         {/* <PostList /> */}
 
-        <UserContext.Provider value={'Menkalinan'}>
+        {/* <UserContext.Provider value={'Menkalinan'}>
 
         <ChannelContext.Provider value={'Codevolution'}>
         <FunctionC />
         </ChannelContext.Provider>
 
-        </UserContext.Provider>
+        </UserContext.Provider> */}
 
         {/* NEXT: useReducer Hook! */}
 
