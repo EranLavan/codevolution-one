@@ -52,7 +52,8 @@ import './appStyles.css';
 // import HookIntervalFunctionCounter from './components/HookIntervalFunctionCounter';
 // import DataFetching from './components/DataFetching';
 // import FunctionC from './components/FunctionC';
-import CounterOne from './components/CounterOne';
+// import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo'
 
 // function App() {
 //   return (
@@ -70,7 +71,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <CounterOne />
+        {/* <CounterOne /> */}
+
+        <CounterTwo />
 
         {/* <ClassCounter /> */}
 
