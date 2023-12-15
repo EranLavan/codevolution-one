@@ -53,7 +53,8 @@ import './appStyles.css';
 // import DataFetching from './components/DataFetching';
 // import FunctionC from './components/FunctionC';
 // import CounterOne from './components/CounterOne';
-import CounterTwo from './components/CounterTwo'
+// import CounterTwo from './components/CounterTwo';
+import CounterThree from './components/CounterThree';
 
 // function App() {
 //   return (
@@ -73,7 +74,9 @@ class App extends Component {
 
         {/* <CounterOne /> */}
 
-        <CounterTwo />
+        {/* <CounterTwo /> */}
+
+        <CounterThree />
 
         {/* <ClassCounter /> */}
 
