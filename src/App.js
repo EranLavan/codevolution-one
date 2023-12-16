@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useReducer } from 'react';
 import './App.css';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -35,7 +35,7 @@ import './appStyles.css';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User';
 // import Counter37 from './components/Counter37';
-// import ComponentC from './components/ComponentC';
+import ComponentC from './components/ComponentC';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm';
 // import ClassCounter from './components/ClassCounter';
@@ -54,7 +54,12 @@ import './appStyles.css';
 // import FunctionC from './components/FunctionC';
 // import CounterOne from './components/CounterOne';
 // import CounterTwo from './components/CounterTwo';
-import CounterThree from './components/CounterThree';
+// import CounterThree from './components/CounterThree';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+// import ComponentD from './components/ComponentD';
+
+export const CountContext = React.createContext()
 
 // function App() {
 //   return (
@@ -67,16 +72,43 @@ import CounterThree from './components/CounterThree';
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
-class App extends Component {
-  render() {
+const initialState = 0;
+const reducer = (state, action) => {
+    switch(action) {
+        case 'increment':
+            return state + 1
+        case 'decrement':
+            return state - 1
+        case 'reset':
+            return initialState
+        default:
+            return state
+    }
+}
+
+function App() {
+
+    const [count, dispatch] = useReducer(reducer, initialState)
+  
     return (
+      <CountContext.Provider 
+        value={{ countState: count, countDispatch: dispatch }}
+      >
       <div className="App">
+
+        Count = {count}
+
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+
+        {/* FINISHED useReducer with useContext 22 */}
 
         {/* <CounterOne /> */}
 
         {/* <CounterTwo /> */}
 
-        <CounterThree />
+        {/* <CounterThree /> */}
 
         {/* <ClassCounter /> */}
 
@@ -220,8 +252,9 @@ class App extends Component {
         {/* <Welcome name="Diana" heroName="Wonder Woman" /> */}
       
       </div>
+      </CountContext.Provider>
     )
   }
-}
+
 
 export default App;
