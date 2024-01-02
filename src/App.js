@@ -17,6 +17,7 @@ import './App.css';
 // import Stylesheet from './components/Stylesheet';
 // import Inline from './components/Inline';
 import './appStyles.css';
+import DataFetchingOne from './components/DataFetchingOne';
 // import styles from './appStyles.module.css';
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
@@ -35,7 +36,7 @@ import './appStyles.css';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User';
 // import Counter37 from './components/Counter37';
-import ComponentC from './components/ComponentC';
+// import ComponentC from './components/ComponentC';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm';
 // import ClassCounter from './components/ClassCounter';
@@ -55,8 +56,8 @@ import ComponentC from './components/ComponentC';
 // import CounterOne from './components/CounterOne';
 // import CounterTwo from './components/CounterTwo';
 // import CounterThree from './components/CounterThree';
-import ComponentA from './components/ComponentA';
-import ComponentB from './components/ComponentB';
+// import ComponentA from './components/ComponentA';
+// import ComponentB from './components/ComponentB';
 // import ComponentD from './components/ComponentD';
 
 export const CountContext = React.createContext()
@@ -88,19 +89,27 @@ const reducer = (state, action) => {
 
 function App() {
 
-    const [count, dispatch] = useReducer(reducer, initialState)
+  return (
+    <div className='App'>
+
+      <DataFetchingOne />
+
+    </div>
+  );
+
+    // const [count, dispatch] = useReducer(reducer, initialState)
   
-    return (
-      <CountContext.Provider 
-        value={{ countState: count, countDispatch: dispatch }}
-      >
-      <div className="App">
+    // return (
+    //   <CountContext.Provider 
+    //     value={{ countState: count, countDispatch: dispatch }}
+    //   >
+    //   <div className="App">
 
-        Count = {count}
+    //     Count = {count}
 
-        <ComponentA />
-        <ComponentB />
-        <ComponentC />
+    //     <ComponentA />
+    //     <ComponentB />
+    //     <ComponentC />
 
         {/* FINISHED useReducer with useContext 22 */}
 
@@ -251,9 +260,9 @@ function App() {
         {/* <Welcome name="Clark" heroName="Superman" /> */}
         {/* <Welcome name="Diana" heroName="Wonder Woman" /> */}
       
-      </div>
-      </CountContext.Provider>
-    )
+      // </div>
+      // </CountContext.Provider>
+    // )
   }
 
 
