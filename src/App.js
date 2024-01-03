@@ -18,6 +18,7 @@ import './App.css';
 // import Inline from './components/Inline';
 import './appStyles.css';
 import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 // import styles from './appStyles.module.css';
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
@@ -92,7 +93,9 @@ function App() {
   return (
     <div className='App'>
 
-      <DataFetchingOne />
+      <DataFetchingTwo />
+
+      {/* NEXT  hooks 25  */}
 
     </div>
   );
