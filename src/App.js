@@ -1,5 +1,6 @@
-import React, { Component, useReducer } from 'react';
+import React from 'react';
 import './App.css';
+import HookParentComponent from './components/HookParentComponent'
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -17,8 +18,8 @@ import './App.css';
 // import Stylesheet from './components/Stylesheet';
 // import Inline from './components/Inline';
 import './appStyles.css';
-import DataFetchingOne from './components/DataFetchingOne';
-import DataFetchingTwo from './components/DataFetchingTwo';
+// import DataFetchingOne from './components/DataFetchingOne';
+// import DataFetchingTwo from './components/DataFetchingTwo';
 // import styles from './appStyles.module.css';
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
@@ -61,7 +62,7 @@ import DataFetchingTwo from './components/DataFetchingTwo';
 // import ComponentB from './components/ComponentB';
 // import ComponentD from './components/ComponentD';
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
 // function App() {
 //   return (
@@ -71,201 +72,33 @@ export const CountContext = React.createContext()
 //   );
 // }
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
-const initialState = 0;
-const reducer = (state, action) => {
-    switch(action) {
-        case 'increment':
-            return state + 1
-        case 'decrement':
-            return state - 1
-        case 'reset':
-            return initialState
-        default:
-            return state
-    }
-}
+// const initialState = 0;
+// const reducer = (state, action) => {
+//     switch(action) {
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialState
+//         default:
+//             return state
+//     }
+// }
 
 function App() {
 
   return (
     <div className='App'>
 
-      <DataFetchingTwo />
-
-      {/* NEXT  hooks 25  */}
+      <HookParentComponent />
 
     </div>
   );
 
-    // const [count, dispatch] = useReducer(reducer, initialState)
-  
-    // return (
-    //   <CountContext.Provider 
-    //     value={{ countState: count, countDispatch: dispatch }}
-    //   >
-    //   <div className="App">
-
-    //     Count = {count}
-
-    //     <ComponentA />
-    //     <ComponentB />
-    //     <ComponentC />
-
-        {/* FINISHED useReducer with useContext 22 */}
-
-        {/* <CounterOne /> */}
-
-        {/* <CounterTwo /> */}
-
-        {/* <CounterThree /> */}
-
-        {/* <ClassCounter /> */}
-
-        {/* <HookCounter /> */}
-
-        {/* <HookCounterTwo /> */}
-
-        {/* <HookCounterThree /> */}
-
-        {/* <HookCounterFour /> */}
-
-        {/* <HookClassCounterOne />
-
-        <HookFunctionCounterOne /> */}
-
-        {/* <HookClassMouse /> */}
-
-        {/* <HookFunctionMouse /> */}
-
-        {/* <HookMouseContainer /> */}
-
-        {/* <HookIntervalClassCounter />
-
-        <HookIntervalFunctionCounter /> */}
-
-        {/* <DataFetching /> */}
-
-        {/* //////////////////////////////////// */}
-
-        {/* <PostForm /> */}
-
-        {/* <PostList /> */}
-
-        {/* <UserContext.Provider value={'Menkalinan'}>
-
-        <ChannelContext.Provider value={'Codevolution'}>
-        <FunctionC />
-        </ChannelContext.Provider>
-
-        </UserContext.Provider> */}
-
-        {/* NEXT: useReducer Hook! */}
-
-        {/* <User render={(isLoggedIn) => isLoggedIn ? 'Menkalinan' : 'Guest'}/>
-
-        <Counter37>
-          {
-            (count, incrementCount) => (
-              <ClickCounterTwo
-              count={count}
-              incrementCount={incrementCount}>
-              </ClickCounterTwo>
-            )
-          }
-        </Counter37>
-
-        <Counter37>
-          {
-            (count, incrementCount) => (
-              <HoverCounterTwo
-              count={count}
-              incrementCount={incrementCount}>
-              </HoverCounterTwo>
-            )
-          }
-        </Counter37> */}
-
-        {/* <ClickCounter name='Menkalinan'/>
-
-        <HoverCounter />
-
-        <ClickCounterTwo />
-
-        <HoverCounterTwo /> */}
-
-        {/* <ErrorBoundary><Hero heroName='Batman' /></ErrorBoundary>
-        <ErrorBoundary><Hero heroName='Superman' /></ErrorBoundary>
-        <ErrorBoundary><Hero heroName='Joker' /></ErrorBoundary> */}
-
-        {/* <PortalDemo /> */}
-
-        {/* <FRParentInput /> */}
-
-        {/* <FocusInput /> */}
-
-        {/* <RefsDemo /> */}
-
-        {/* <ParentComp /> */}
-
-        {/* <Table /> */}
-
-        {/* <FragmentDemo /> */}
-
-        {/* <LifecycleA /> */}
-
-        {/* <Form /> */}
-
-        {/* <h1 className='error'>Error</h1>
-        <h1 className={styles.success}>Success</h1>
-        <Inline />
-        <Stylesheet primary={true}/> */}
-
-        {/* <Stylesheet primary={true}/> */}
-
-        {/* <Inline /> */}
-
-        {/* <PersonsList /> */}
-
-        {/* <NameList /> */}
-
-        {/* <UserGreeting /> */}
-
-        {/* <ParentComponent /> */}
-        
-        {/* <FunctionClick /> */}
-
-        {/* <EventBind /> */}
-
-        {/* <ClassClick /> */}
-
-        {/* <Counter /> */}
-
-        {/* <Message />
-
-        <Countergpt /> */}
-
-
-
-        {/* <Greet name="Bruce" heroName="Batman">
-          <p>This is children props</p>
-        </Greet> */}
-        
-        {/* <Greet name="Clark" heroName="Superman">
-          <button>Action</button>
-        </Greet> */}
-        
-        {/* <Greet name="Diana" heroName="Wonder Woman"/> */}
-
-        {/* <Welcome name="Bruce" heroName="Batman" /> */}
-        {/* <Welcome name="Clark" heroName="Superman" /> */}
-        {/* <Welcome name="Diana" heroName="Wonder Woman" /> */}
-      
-      // </div>
-      // </CountContext.Provider>
-    // )
   }
 
 
