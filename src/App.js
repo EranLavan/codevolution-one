@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HookParentComponent from './components/HookParentComponent'
+// import HookParentComponent from './components/HookParentComponent'
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -62,39 +62,15 @@ import './appStyles.css';
 // import ComponentB from './components/ComponentB';
 // import ComponentD from './components/ComponentD';
 
-// export const CountContext = React.createContext()
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <AnyNameLiterally />
-//     </div>
-//   );
-// }
-
-// export const UserContext = React.createContext()
-// export const ChannelContext = React.createContext()
-
-// const initialState = 0;
-// const reducer = (state, action) => {
-//     switch(action) {
-//         case 'increment':
-//             return state + 1
-//         case 'decrement':
-//             return state - 1
-//         case 'reset':
-//             return initialState
-//         default:
-//             return state
-//     }
-// }
+import AXClassCounter from './components/AXClassCounter';
+import AXHookCounter from './components/AXHookCounter';
 
 function App() {
 
   return (
     <div className='App'>
 
-      <HookParentComponent />
+      <AXHookCounter />
 
     </div>
   );
