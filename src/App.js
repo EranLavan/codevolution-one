@@ -65,13 +65,14 @@ import './appStyles.css';
 import AXClassCounter from './components/AXClassCounter';
 import AXHookCounter from './components/AXHookCounter';
 import AXHookCounterTwo from './components/AXHookCounterTwo';
+import AXHookCounterThree from './components/AXHookCounterThree'
 
 function App() {
 
   return (
     <div className='App'>
 
-      <AXHookCounterTwo />
+      <AXHookCounterThree />
 
     </div>
   );
