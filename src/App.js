@@ -66,14 +66,15 @@ import './appStyles.css';
 // import AXHookCounter from './components/AXHookCounter';
 // import AXHookCounterTwo from './components/AXHookCounterTwo';
 // import AXHookCounterThree from './components/AXHookCounterThree'
-import AXHookCounterFour from './components/AXHookCounterFour';
+// import AXHookCounterFour from './components/AXHookCounterFour';
+import AXHookCountersCombined from './components/AXHookCountersCombined';
 
 function App() {
 
   return (
     <div className='App'>
 
-      <AXHookCounterFour />
+      <AXHookCountersCombined />
 
     </div>
   );
