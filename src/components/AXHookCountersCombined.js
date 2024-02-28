@@ -5,11 +5,19 @@ function AXHookCountersCombined() {
   const initialCount = 0
   const [count, setCount] = useState(initialCount)
   const [name, setName] = useState({firstName: '', lastName: ''})
+  const [items, setItems] = useState([])
 
   const incrementFive = () => {
     for (let i = 0; i < 5; i++) {
         setCount(prevCount => prevCount + 1)
     }
+  }
+
+  const addItem = () => {
+    setItems([...items, {
+      id: items.length,
+      value: Math.floor(Math.random()*10)
+    }])
   }
 
   return (
@@ -40,6 +48,13 @@ function AXHookCountersCombined() {
       <h3>{JSON.stringify(name)}</h3>
     </form>
 
+    <button onClick={addItem}>Add Item</button>
+      <ul>
+        {
+          items.map(item =>
+            <li key={item.id}>{item.value}</li>)
+        }
+      </ul>
   </>
   )
 }
