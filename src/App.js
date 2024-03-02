@@ -70,13 +70,14 @@ import './appStyles.css';
 // import AXHookCountersCombined from './components/AXHookCountersCombined';
 import AXHookCounterFourSecond from './components/AXHookCounterFourSecond';
 import AXClassCounterOne from './components/AXClassCounterOne';
+import AXClassCounterOneX from './components/AXClassCounterOneX';
 
 function App() {
 
   return (
     <div className='App'>
 
-      <AXClassCounterOne />
+      <AXClassCounterOneX />
 
     </div>
   );
