@@ -72,13 +72,14 @@ import AXHookCounterFourSecond from './components/AXHookCounterFourSecond';
 import AXClassCounterOne from './components/AXClassCounterOne';
 import AXClassCounterOneX from './components/AXClassCounterOneX';
 import AXHookCounterOne from './components/AXHookCounterOne';
+import AXHookCounterOneX from './components/AXHookCounterOneX';
 
 function App() {
 
   return (
     <div className='App'>
 
-      <AXHookCounterOne />
+      <AXHookCounterOneX />
 
     </div>
   );
