@@ -79,7 +79,7 @@ function App() {
   return (
     <div className='App'>
 
-      <AXHookCounterOneX />
+      <AXHookCounterOne />
 
     </div>
   );
