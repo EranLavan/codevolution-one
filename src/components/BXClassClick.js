@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class classClick extends Component {
+class BXClassClick extends Component {
 
   clickHandler() {
     console.log('Clicked the button!')
@@ -13,13 +13,14 @@ class classClick extends Component {
   render() {
     return (
       <div>
-        <button 
-          onClick={this.clickHandler} 
+        <button
+          onClick={this.clickHandler}
           onMouseOver={this.mouseOverHandler}
         >Click Me!</button>
+        
       </div>
     )
   }
 }
 
-export default classClick
+export default BXClassClick
