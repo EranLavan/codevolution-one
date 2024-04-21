@@ -5,7 +5,6 @@ import './App.css';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
 // import Message from './components/Message';
-// import Mashehu from './components/Mashehu';
 // import Countergpt from './components/Countergpt';
 // import Counter from './components/Counter';
 // import FunctionClick from './components/FunctionClick';
@@ -68,11 +67,11 @@ import './appStyles.css';
 // import AXHookCounterThree from './components/AXHookCounterThree'
 // import AXHookCounterFour from './components/AXHookCounterFour';
 // import AXHookCountersCombined from './components/AXHookCountersCombined';
-import AXHookCounterFourSecond from './components/AXHookCounterFourSecond';
-import AXClassCounterOne from './components/AXClassCounterOne';
-import AXClassCounterOneX from './components/AXClassCounterOneX';
-import AXHookCounterOne from './components/AXHookCounterOne';
-import AXHookCounterOneX from './components/AXHookCounterOneX';
+// import AXHookCounterFourSecond from './components/AXHookCounterFourSecond';
+// import AXClassCounterOne from './components/AXClassCounterOne';
+// import AXClassCounterOneX from './components/AXClassCounterOneX';
+// import AXHookCounterOne from './components/AXHookCounterOne';
+// import AXHookCounterOneX from './components/AXHookCounterOneX';
 
 function App() {
 
